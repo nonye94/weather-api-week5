@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint .--ext .ts,.tsx",
     "start": "node dist/src/server.js",
     "dev": "nodemon dist/src/server.js",
     "build": "tsc-p tsconfig.json",
@@ -21,12 +22,15 @@
   "author": "Lucian Duta",
   "dependencies": {
     "@faker-js/faker": "^9.5.0",
+    "eslint": "^9.21.0",
     "express": "^4.21.2",
     "express-validator": "^7.2.1",
     "prettier": "^3.5.2"
   },
   "devDependencies": {
     "@types/node": "^22.13.5",
+    "@typescript-eslint/eslint-plugin": "^8.25.0",
+    "@typescript-eslint/parser": "^8.25.0",
     "nodemon": "^3.1.9",
     "npm-run": "^5.0.1",
     "ts-node": "^10.9.2",
