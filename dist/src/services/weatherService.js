@@ -1,4 +1,4 @@
-import { faker } from "@faker-js/faker";
+import { faker } from '@faker-js/faker';
 export const generateLondonWeatherData = () => {
     const generatedWeatherData = {
         temperature: faker.number.int({ min: -15, max: 30 }),
